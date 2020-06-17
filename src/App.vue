@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <VisualEditor initialContent="<p>Initial Content!</p>" />
+    <SimpleButton />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import VisualEditor from './components/VisualEditor.vue'
+import SimpleButton from './components/SimpleButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    VisualEditor,
+    SimpleButton
   }
 }
 </script>
